@@ -1,0 +1,38 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__GPU_TIMER_H__" variable (:constant-flag t) nil [33 48])
+            ("GpuTimer" type
+               (:members 
+                  ( ("start" variable (:type ("cudaEvent_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [74 92])
+                    ("stop" variable (:type ("cudaEvent_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [99 116])
+                    ("GpuTimer" function
+                       (:constructor-flag t
+                        :type ("GpuTimer" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [125 218])
+                    ("GpuTimer" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [226 320])
+                    ("Start" function (:type "void") (reparse-symbol classsubparts) [329 390])
+                    ("Stop" function (:type "void") (reparse-symbol classsubparts) [399 458])
+                    ("Elapsed" function (:type "float") (reparse-symbol classsubparts) [467 644]))                  
+                :type "struct")
+                nil [50 647]))          
+      :file "gputimer.h"
+      :pointmax 679
+      :fsize 678
+      :lastmodtime '(22464 16433 90101 848000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__GPU_TIMER_H__")
+          )
+))
+  :file "!root!dl-data!cuda!cs344!Lesson Code Snippets!Lesson 2 Code Snippets!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

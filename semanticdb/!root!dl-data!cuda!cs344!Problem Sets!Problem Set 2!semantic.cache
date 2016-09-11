@@ -1,0 +1,138 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("NVCC" variable (:default-value ("nvcc")) nil [1 11])
+            ("OPENCV_LIBPATH" variable (:default-value ("/usr/lib")) nil [157 181])
+            ("OPENCV_INCLUDEPATH" variable (:default-value ("/usr/include")) nil [181 213])
+            ("OPENCV_LIBS" variable (:default-value ("-lopencv_core" "-lopencv_imgproc" "-lopencv_highgui")) nil [442 502])
+            ("CUDA_INCLUDEPATH" variable (:default-value ("/usr/local/cuda-8.0/include")) nil [502 547])
+            ("NVCC_OPTS" variable (:default-value ("-O3" "-arch=sm_61" "-Xcompiler" "-Wall" "-Xcompiler" "-Wextra" "-m64")) nil [791 858])
+            ("GCC_OPTS" variable (:default-value ("-O3" "-Wall" "-Wextra" "-m64")) nil [859 891])
+            ("student" function (:arguments ("main.o" "student_func.o" "compare.o" "reference_calc.o" "Makefile")) nil [892 1073])
+            ("main.o" function (:arguments ("main.cpp" "timer.h" "utils.h" "HW2.cpp")) nil [1074 1192])
+            ("student_func.o" function (:arguments ("student_func.cu" "reference_calc.cpp" "utils.h")) nil [1193 1290])
+            ("compare.o" function (:arguments ("compare.cpp" "compare.h")) nil [1291 1404])
+            ("reference_calc.o" function (:arguments ("reference_calc.cpp" "reference_calc.h")) nil [1405 1546])
+            ("clean" function nil nil [1547 1574]))          
+      :file "Makefile"
+      :pointmax 1574
+      :fsize 1573
+      :lastmodtime '(22464 16989 1363 120000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [23 42])
+            ("timer.h" include nil nil [43 61])
+            ("utils.h" include nil nil [62 80])
+            ("string" include (:system-flag t) nil [81 98])
+            ("stdio.h" include (:system-flag t) nil [99 117])
+            ("reference_calc.h" include nil nil [119 146])
+            ("compare.h" include nil nil [147 167])
+            ("HW2.cpp" include nil nil [236 254])
+            ("your_gaussian_blur" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("h_inputImageRGBA" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uchar4" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [330 368])
+                    ("d_inputImageRGBA" variable
+                       (:pointer 1
+                        :type ("uchar4" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [369 401])
+                    ("d_outputImageRGBA" variable
+                       (:pointer 1
+                        :type ("uchar4" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [426 458])
+                    ("numRows" variable
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [483 504])
+                    ("numCols" variable
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [505 526])
+                    ("d_redBlurred" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [551 579])
+                    ("d_greenBlurred" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [604 634])
+                    ("d_blueBlurred" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [659 688])
+                    ("filterWidth" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [713 735]))                  
+                :type "void")
+                nil [306 736])
+            ("allocateMemoryAndCopyToGPU" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("numRowsImage" variable
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [770 796])
+                    ("numColsImage" variable
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [797 823])
+                    ("h_filter" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [856 884])
+                    ("filterWidth" variable
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [885 910]))                  
+                :type "void")
+                nil [738 911])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [956 965])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [966 978]))                  
+                :type "int")
+                nil [947 3956]))          
+      :file "main.cpp"
+      :pointmax 3957
+      :fsize 3958
+      :lastmodtime '(22463 2734 817364 110000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "timer.h"
+      :fsize 577
+      :lastmodtime '(22463 2734 817364 110000))
+    (semanticdb-table "semanticdb-table"
+      :file "utils.h"
+      :fsize 2959
+      :lastmodtime '(22463 2734 817364 110000))
+    (semanticdb-table "semanticdb-table"
+      :file "reference_calc.h"
+      :fsize 271
+      :lastmodtime '(22463 2734 817364 110000))
+    (semanticdb-table "semanticdb-table"
+      :file "compare.h"
+      :fsize 194
+      :lastmodtime '(22463 2734 817364 110000))
+    (semanticdb-table "semanticdb-table"
+      :file "HW2.cpp"
+      :fsize 5010
+      :lastmodtime '(22463 2734 813365 936000)))
+  :file "!root!dl-data!cuda!cs344!Problem Sets!Problem Set 2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

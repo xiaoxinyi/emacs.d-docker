@@ -1,0 +1,1 @@
+("~/.emacs.d/" "~/torch/" "~/dl-data/char-rnn/" "~/dl-data/cuda/cs344/" "~/dl-data/cuda/my_program/" "~/.emacs.d/elpa/yasnippet-20160802.625/snippets/" "~/caffe/" "~/zhangli/dl-docker/" "~/dl-data/cvpr2015/crnn/")

@@ -1,0 +1,1 @@
+(define-package "lua-mode" "20160822.316" "a majormode for editing Lua scripts"  'nil  :url "https://github.com/immerrr/lua-mode" :keywords '("languages" "processes" "tools" ))

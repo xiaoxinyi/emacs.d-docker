@@ -1,0 +1,115 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [2 19])
+            ("opencv2/core/core.hpp" include (:system-flag t) nil [20 52])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [53 91])
+            ("cuda.h" include (:system-flag t) nil [92 109])
+            ("cuda_runtime.h" include (:system-flag t) nil [110 135])
+            ("utils.h" include nil nil [137 155])
+            ("imageRGBA" variable (:type ("cv::Mat" type (:type "class") nil nil)) nil [157 175])
+            ("imageGrey" variable (:type ("cv::Mat" type (:type "class") nil nil)) nil [176 194])
+            ("d_rgbaImage__" variable
+               (:pointer 1
+                :type ("uchar4" type (:type "class") nil nil))
+                nil [196 218])
+            ("d_greyImage__" variable
+               (:pointer 1
+                :type "unsigned char")
+                nil [219 248])
+            ("numRows" function (:type ("size_t" type (:type "class") nil nil)) nil [250 293])
+            ("numCols" function (:type ("size_t" type (:type "class") nil nil)) nil [294 337])
+            ("preProcess" function
+               (:arguments 
+                  ( ("inputImage" variable
+                       (:pointer 2
+                        :type ("uchar4" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [620 640])
+                    ("greyImage" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [641 667])
+                    ("d_rgbaImage" variable
+                       (:pointer 2
+                        :type ("uchar4" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [684 705])
+                    ("d_greyImage" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [706 755])
+                    ("filename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [750 778]))                  
+                :type "void")
+                nil [604 2109])
+            ("postProcess" function
+               (:arguments 
+                  ( ("output_file" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2128 2159]))                  
+                :type "void")
+                nil [2111 2580]))          
+      :file "reference_hw1.cpp"
+      :pointmax 2581
+      :fsize 2580
+      :lastmodtime '(22462 65513 508344 804000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("referenceCalculation" function
+               (:arguments 
+                  ( ("rgbaImage" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uchar4" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28 58])
+                    ("greyImage" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [85 116])
+                    ("numRows" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [143 158])
+                    ("numCols" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [185 200]))                  
+                :type "void")
+                nil [2 478]))          
+      :file "reference_calc.cpp"
+      :pointmax 479
+      :fsize 478
+      :lastmodtime '(22463 1253 142983 570000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("N" variable (:constant-flag t) nil [39 40])
+            ("g" variable
+               (:dereference 1
+                :type "int")
+                nil [62 71])
+            ("bar" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [100 105]))                  
+                :type "void")
+                nil [91 106]))          
+      :file "b.h"
+      :pointmax 107
+      :fsize 106
+      :lastmodtime '(22466 33895 104102 620000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("N" . 
+              ((number "8" 41 . 42) (EXTERN "extern" 43 . 49) (symbol "__device__" 50 . 60) (INT "int" 61 . 64) (symbol "g" 65 . 66) (semantic-list "[N]" 66 . 69) (punctuation ";" 69 . 70)))
+          )
+))
+  :file "!root!dl-data!cuda!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

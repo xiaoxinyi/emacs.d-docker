@@ -1,0 +1,31 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("NVCC" variable (:default-value ("nvcc")) nil [1 11])
+            ("OPENCV_LIBPATH" variable (:default-value ("/usr/lib")) nil [157 181])
+            ("OPENCV_INCLUDEPATH" variable (:default-value ("/usr/include")) nil [181 213])
+            ("OPENCV_LIBS" variable (:default-value ("-lopencv_core" "-lopencv_imgproc" "-lopencv_highgui")) nil [442 502])
+            ("CUDA_INCLUDEPATH" variable (:default-value ("/usr/local/cuda-8.0/include")) nil [503 548])
+            ("NVCC_OPTS" variable (:default-value ("-O3" "-arch=sm_61" "-Xcompiler" "-Wall" "-Xcompiler" "-Wextra" "-m64")) nil [792 859])
+            ("GCC_OPTS" variable (:default-value ("-O3" "-Wall" "-Wextra" "-m64")) nil [860 892])
+            ("student" function (:arguments ("main.o" "student_func.o" "HW3.o" "loadSaveImage.o" "compare.o" "reference_calc.o" "Makefile")) nil [893 1118])
+            ("main.o" function (:arguments ("main.cpp" "timer.h" "utils.h" "reference_calc.h" "compare.h")) nil [1119 1231])
+            ("HW3.o" function (:arguments ("HW3.cu" "loadSaveImage.h" "utils.h")) nil [1232 1327])
+            ("loadSaveImage.o" function (:arguments ("loadSaveImage.cpp" "loadSaveImage.h")) nil [1328 1465])
+            ("compare.o" function (:arguments ("compare.cpp" "compare.h")) nil [1466 1579])
+            ("reference_calc.o" function (:arguments ("reference_calc.cpp" "reference_calc.h")) nil [1580 1721])
+            ("student_func.o" function (:arguments ("student_func.cu" "utils.h")) nil [1722 1803])
+            ("clean" function nil nil [1804 1888]))          
+      :file "Makefile"
+      :pointmax 1888
+      :fsize 1887
+      :lastmodtime '(22466 17268 834051 288000)
+      :unmatched-syntax nil))
+  :file "!root!dl-data!cuda!cs344!Problem Sets!Problem Set 3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
