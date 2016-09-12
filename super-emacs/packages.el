@@ -368,16 +368,27 @@
 
   )
 
+;; magit
 (use-package magit
   :ensure t
   :bind (("C-x g" . magit-status)))
 
+;; lua-mode
 (use-package lua-mode
   :ensure t
   :config
   (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
-  (add-to-list 'interpreter-mode-alist '("lua" . lua-mode)))
+  (add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
+  :bind
+  (
+   :map lua-mode-map
+        ("C-<return>" . lua-send-current-line)
+        ("C-c C-c" . lua-send-region)
+        ("C-M-x" . lua-send-defun)
+  )
+)
 
 (use-package git-gutter+
   :ensure t
-  :config (global-git-gutter+-mode))
+  :config (global-git-gutter+-mode)
+)
