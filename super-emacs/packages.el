@@ -81,12 +81,13 @@
     ("C-x C-r" . helm-recentf)
     ("M-y" . helm-show-kill-ring)
     ("C-c h" . helm-command-prefix)
-  :map helm-map
-  ;("<tab>" . helm-execute-persistent-action)
-  ("C-j" .  helm-execute-persistent-action)
-  ("C-z" . helm-select-action))
+    :map helm-map
+    ;;("<tab>" . helm-execute-persistent-action)
+    ("C-j" .  helm-execute-persistent-action)
+    ("C-z" . helm-select-action))
   :config
   (helm-mode 1)
+  (require 'helm-config)
   (helm-autoresize-mode t)
   (setq helm-split-window-in-side-p t
         ;helm-move-to-line-cycle-in-source t
@@ -94,7 +95,7 @@
         helm-ff-search-library-in-sexp t)
   (use-package helm-ag
     :ensure t)
-  (use-package helm-config))
+  )
 
 
 ; multi term

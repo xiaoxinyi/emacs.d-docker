@@ -17,7 +17,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (lua-mode magit google-c-style flymake-cursor flymake-google-cpplint iedit auto-complete-c-headers yasnippet cuda-mode helm ztree ws-butler use-package undo-tree theme-looper switch-window solarized-theme smartparens projectile powerline myterminal-controls multiple-cursors multi-term meta-presenter material-theme ido-vertical-mode ido-ubiquitous helm-ag git-gutter+ flycheck flx-ido elpy ein direx dired-open dired+ clean-aindent-mode buffer-move auto-complete ace-jump-mode))))
+    (helm-config lua-mode magit google-c-style flymake-cursor flymake-google-cpplint iedit auto-complete-c-headers yasnippet cuda-mode helm ztree ws-butler use-package undo-tree theme-looper switch-window solarized-theme smartparens projectile powerline myterminal-controls multiple-cursors multi-term meta-presenter material-theme ido-vertical-mode ido-ubiquitous helm-ag git-gutter+ flycheck flx-ido elpy ein direx dired-open dired+ clean-aindent-mode buffer-move auto-complete ace-jump-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
