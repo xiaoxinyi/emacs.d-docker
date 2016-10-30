@@ -95,7 +95,7 @@
         helm-ff-search-library-in-sexp t)
   (use-package helm-ag
     :ensure t)
-  )
+)
 
 
 ; multi term
@@ -246,6 +246,8 @@
   (elpy-enable)
   (setq elpy-rpc-python-command "python")
   (elpy-use-ipython "ipython")
+  ;; disable highlight indentation
+  (delq 'elpy-module-highlight-indentation elpy-modules)
 
   ;;(setq elpy-rpc-backend "jedi")
   (setq elpy-rpc-backend "jedi")
