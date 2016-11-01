@@ -1,0 +1,1 @@
+(define-package "eproject" "20151206.1330" "assign files to projects, programatically"  '((helm "1.6.4") ) :url "https://github.com/jrockway/eproject" :keywords '("programming" "projects" ))
