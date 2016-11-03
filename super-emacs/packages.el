@@ -216,8 +216,17 @@
   :ensure t
   :config
   (projectile-global-mode)
+  (setq projectile-completion-system 'helm)
 )
 
+(use-package  helm-projectile
+  :ensure t
+  :config
+  (helm-projectile-on)
+  ;; (setq projectile-switch-project-action 'helm-projectile-find-file)
+  (setq projectile-switch-project-action 'helm-projectile)
+  (setq projectile-enable-caching t)
+  )
 
 ;; execute in emacs
 (setenv "PATH"
