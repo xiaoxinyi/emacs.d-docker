@@ -462,5 +462,5 @@
 
 (add-hook 'c-mode-common-hook   'hs-minor-mode)
 (add-hook 'emacs-lisp-mode-hook 'hs-minor-mode)
-;; (add-hook 'elpy-mode-hook 'hs-minor-mode)
+(add-hook 'elpy-mode-hook 'hs-minor-mode)
 (add-hook 'lua-mode-hook 'hs-minor-mode)

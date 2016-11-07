@@ -29,10 +29,11 @@
         (t (message "You're not editing a file!"))))
 
 ;Disable splash message, start *scratch* buffer by default
-(setq initial-buffer-choice 
-      t)
-(setq initial-scratch-message 
-      "")
+;; (setq initial-buffer-choice t)
+
+;; kill *gnu emacs* buffer when start
+(setq inhibit-startup-message t)
+(setq initial-scratch-message  "")
 
 ;Enforce spaces for indentation, instead of tabs
 (setq-default indent-tabs-mode  nil)
